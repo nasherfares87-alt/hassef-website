@@ -61,15 +61,19 @@ html[lang="en"] h1, html[lang="en"] h2, html[lang="en"] h3 { font-family: var(--
 
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--text); }
 .brand-mark {
-  width: 46px; height: 46px; flex: none;
-  display: grid; place-items: center;
-  border-radius: 12px;
+  padding: 8px 16px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
   background: var(--gold-grad);
   color: #0d1117;
-  font-size: 1.5rem; font-weight: 900;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
   font-family: var(--font-ar);
   box-shadow: 0 6px 20px rgba(200, 169, 92, 0.35);
 }
+html[lang="en"] .brand-mark { font-family: var(--font-display-en); font-weight: 700; letter-spacing: 0.04em; }
 html[lang="en"] .brand-mark { font-family: var(--font-display-en); font-weight: 700; }
 .brand-text { display: flex; flex-direction: column; line-height: 1.3; }
 .brand-name { font-weight: 800; font-size: 1.05rem; }
@@ -376,7 +380,7 @@ html[lang="ar"] .section-tag { letter-spacing: 0; }
 }
 .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 30px; flex-wrap: wrap; }
 .footer-brand { display: flex; align-items: center; gap: 12px; }
-.footer-brand .brand-mark { width: 40px; height: 40px; font-size: 1.2rem; border-radius: 10px; }
+.footer-brand .brand-mark { font-size: 0.9rem; padding: 6px 12px; border-radius: 8px; }
 .footer-nav { display: flex; gap: 26px; flex-wrap: wrap; }
 .footer-nav a { color: var(--text-2); text-decoration: none; font-size: 0.88rem; transition: color 0.25s; }
 .footer-nav a:hover { color: var(--gold-2); }
